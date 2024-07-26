@@ -40,6 +40,8 @@ export default function useBankingController() {
     return Number(stakingBalance);
   }
 
+  
+
   function buyFunds() {
     writeContractAsync({
       abi: bankAbi,

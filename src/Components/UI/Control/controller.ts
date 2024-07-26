@@ -40,7 +40,7 @@ export default function useBankingController() {
     return Number(stakingBalance);
   }
 
-  
+
 
   function buyFunds() {
     writeContractAsync({
@@ -52,6 +52,8 @@ export default function useBankingController() {
       console.log(err.details);
     });
   }
+
+  
 
   useLayoutEffect(() => {
     async function getStakingBalance() {

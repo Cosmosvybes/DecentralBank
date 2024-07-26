@@ -67,8 +67,8 @@ const Controlls = ({ sendingStatus, switchStatus }: sendingFunds) => {
         <div className="relative flex justify-between items-center w-full px-1 max-sm:px-0">
           <div className="relative justify-end flex-col flex  mb-3 px-1 py-3 rounded-md ">
             <p className="text-white text-xl font-normal"> Stake Account </p>
-            <h1 className="text-white text-3xl flex justify-center items-center gap-2 font-bold">
-              <CoinDollar className="inline text-white text-2xl mt-1" />
+            <h1 className="text-white text-xl flex justify-center items-center gap-2 font-bold">
+              <CoinDollar className="inline text-white text-xl mt-1" />
               DBC 0.00{" "}
             </h1>
           </div>
@@ -78,8 +78,8 @@ const Controlls = ({ sendingStatus, switchStatus }: sendingFunds) => {
               {" "}
               Stake Reward{" "}
             </p>
-            <h1 className="text-white text-3xl flex justify-center items-center gap-2 font-bold">
-              <CoinDollar className="inline text-white text-2xl mt-1" /> DBRC
+            <h1 className="text-white text-xl flex justify-center items-center gap-2 font-bold">
+              <CoinDollar className="inline text-white text-xl mt-1" /> DBRC
               0.00{" "}
             </h1>
           </div>

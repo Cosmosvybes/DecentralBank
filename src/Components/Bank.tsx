@@ -5,7 +5,7 @@ import Main from "./UI/Section/Main";
 const Bank = () => {
   return (
     <>
-      <div className="relative h-auto flex flex-col gap-5 bg-gray-50">
+      <div className="relative h-auto flex flex-col gap-5 bg-white">
         <Header />
         <Main />
         <Footer />

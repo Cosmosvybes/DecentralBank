@@ -16,12 +16,13 @@ const Main = () => {
 
   return (
     <>
-      <div className="relative h-1/2 bg-white  max-sm:w-full flex ">
+      <div className="relative h-1/2 bg-white  max-sm:w-full flex px-10 max-sm:px-0 max-md:px-0 ">
         <div className="flex w-full px-2 py-5 flex-col ">
-          <h1 className=" text-4xl text-red-800 font-extrabold ">
+          <h1 className=" text-4xl ml-0 max-sm:ml-0 max-md:ml-0 text-red-800 font-extrabold ">
             Dont Miss{" "}
             <ArrowRight className="text-3xl inline text-red-900 mb-0.5" />
           </h1>
+
           <div className="relative flex w-full gap-2 max-sm:flex-col max-md:flex-col ">
             {services.map((service) => (
               <Service image={service.image} text={service.text} />

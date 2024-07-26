@@ -2,7 +2,7 @@ import { ArrowRight } from "react-huge-icons/solid";
 const Footer = () => {
   return (
     <>
-      <div className="relative flex flex-col justify-center items-center h-auto ">
+      <div className="relative bg-white flex flex-col justify-center items-center h-full ">
         <p className="text-gray-500 font-normal text-2xl max-sm:text-sm text-center">
           Decentralized Banking Service Powered by Blockchain, Licensed by
           Ethereum.

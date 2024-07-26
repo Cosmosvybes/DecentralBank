@@ -85,7 +85,7 @@ const Controlls = ({ sendingStatus, switchStatus }: sendingFunds) => {
           </div>
         </div>
 
-        <div className="relative flex justify-start items-center gap-2 py-2 px-2   w-full  max-sm:border-none max-sm:px-2 max-sm:h-44  max-sm:grid grid-cols-4 max-sm:gap-2 max-sm:py-2 max-sm:w-full max-sm:justify-centermax-sm:shadow-none max-sm:rounded-md h-24 rounded-xl ">
+        <div className="relative flex justify-start items-center gap-2 py-2 px-2   w-full  max-sm:border-none max-sm:px-2 max-sm:h-auto  max-sm:grid grid-cols-4 max-sm:gap-2 max-sm:py-2 max-sm:w-full max-sm:justify-centermax-sm:shadow-none max-sm:rounded-md h-24 rounded-xl ">
           {controlls.map(({ text, icon, sendCallback, id }) => (
             <BTN text={text} icon={icon} key={id} callback={sendCallback} />
           ))}

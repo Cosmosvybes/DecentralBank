@@ -24,17 +24,17 @@ const Controlls = ({ sendingStatus, switchStatus }: sendingFunds) => {
         <CoinDollar className="text-3xl text-white transition duration-500 max-sm:text-gray-50" />
       ),
       id: 4,
-      text: "Top up",
+      text: "Fund",
       sendCallback: () => buyFunds(),
     },
     {
       icon: <Deposit className="text-3xl max-sm:text-gray-50 text-white" />,
       id: 2,
-      text: "Deposit",
+      text: "Stake",
       sendCallback: () => console.log("hello world"),
     },
     {
-      text: "Withdraw",
+      text: "Unstake",
       icon: <Withdraw className="text-3xl text-white max-sm:text-gray-50" />,
       id: 1,
       sendCallback: () => console.log("hello world"),

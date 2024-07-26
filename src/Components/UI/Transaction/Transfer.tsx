@@ -43,12 +43,17 @@ const Transfer = ({ sendingStatus, changeStatus }: status) => {
             className={`w-full px-3 py-5 max-sm:py-3  transition duration-100  rounded-md text-black bg-gray-50 border brder-gray-50  text-xl outline-red-800 outline-double border-gray-50 ${
               sendingStatus ? "opacity-100" : "opacity-0"
             }`}
+            disabled={sendingStatus ? true : false}
           />
 
           {controlls.map(({ text, icon, id }) => (
             <span key={id}>
               {sendingStatus && (
-                <Button text={text} icon={icon} callback={() => alert("sending dbrc...")} />
+                <Button
+                  text={text}
+                  icon={icon}
+                  callback={() => alert("sending dbrc...")}
+                />
               )}
             </span>
           ))}

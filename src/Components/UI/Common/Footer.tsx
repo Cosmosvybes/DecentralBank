@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <>
       <div className="relative flex flex-col justify-center items-center h-auto ">
-        <p className="text-gray-500 font-normal text-2xl text-center">
+        <p className="text-gray-500 font-normal text-2xl max-sm:text-sm text-center">
           Decentralized Banking Service Powered by Blockchain, Licensed by
           Ethereum.
         </p>

@@ -17,7 +17,7 @@ const Main = () => {
   return (
     <>
       <div className="relative h-1/2 bg-white  max-sm:w-full flex ">
-        <div className="flex w-full px-5 py-5 flex-col ">
+        <div className="flex w-full px-2 py-5 flex-col ">
           <h1 className=" text-4xl text-red-800 font-extrabold ">
             Dont Miss{" "}
             <ArrowRight className="text-3xl inline text-red-900 mb-0.5" />

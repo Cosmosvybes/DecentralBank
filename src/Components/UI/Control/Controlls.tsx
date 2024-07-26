@@ -49,7 +49,7 @@ const Controlls = ({ sendingStatus, switchStatus }: sendingFunds) => {
 
   return (
     <>
-      <div className="relative  flex px-1 py-2 flex-col h-auto  gap-3 rounded-xl ">
+      <div className="relative  flex px-1 py-2 flex-col h-auto  gap-1 rounded-xl ">
         <div className="relative flex justify-between  items-center">
           <div className="relative justify-center flex-col  items-center">
             <h1 className="text-white text-xl font-nomal ">

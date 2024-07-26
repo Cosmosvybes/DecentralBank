@@ -7,7 +7,7 @@ const Header = () => {
   const [isSending, setIsSending] = useState(false);
   return (
     <>
-      <div className="relative h-1/2 max-sm:h-auto   bg-gradient-to-tr from-red-900 to-black flex flex-col gap-3 max-sm:px-0  py-3 justify-center text-white px-10 ">
+      <div className="relative h-1/2 max-sm:h-auto bg-gradient-to-tr from-red-900 to-black flex flex-col gap-1 max-sm:px-0  py-2 justify-center text-white px-10 ">
         <BreadCrumbs />
         <Controlls sendingStatus={isSending} switchStatus={setIsSending} />
         <Transfer sendingStatus={isSending} changeStatus={setIsSending} />

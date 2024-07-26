@@ -3,7 +3,7 @@ import { localhost } from "viem/chains";
 import { createPublicClient, http } from "viem";
 import { useWriteContract } from "wagmi";
 
-import { bankAbi, DbcoinAbi, DCRCAbi } from "../../controller/Web3/credentials";
+import { bankAbi, DbcoinAbi } from "../../controller/Web3/credentials";
 import { dbcoinAddress, decentralBankAddress } from "../../Constant/constant";
 import { useState, useLayoutEffect } from "react";
 import { useAccount } from "wagmi";
@@ -12,7 +12,7 @@ export default function useBankingController() {
   const { writeContractAsync } = useWriteContract();
 
   const [balance, setBalance] = useState(0);
-  const { address, isConnected, isConnecting, isDisconnected } = useAccount();
+  const { address, isConnected } = useAccount();
 
   //configure the public for readonly functions of the SC.
   const publicClient = createPublicClient({
@@ -40,8 +40,6 @@ export default function useBankingController() {
     return Number(stakingBalance);
   }
 
-
-
   function buyFunds() {
     writeContractAsync({
       abi: bankAbi,
@@ -52,8 +50,6 @@ export default function useBankingController() {
       console.log(err.details);
     });
   }
-
-  
 
   useLayoutEffect(() => {
     async function getStakingBalance() {
